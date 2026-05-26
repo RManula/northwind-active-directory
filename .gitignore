@@ -1,0 +1,6 @@
+*.vbox-prev
+*.vmdk
+*.vdi
+Thumbs.db
+*.log
+Desktop.ini
