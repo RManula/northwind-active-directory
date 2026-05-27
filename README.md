@@ -34,7 +34,7 @@ hardening for a fictional 30-person managed IT services company.
 | 6 | Security hardening + attack/detect | ⏳ Not started |
 
 ## Org Chart
-![Northwind Org Chart](screenshots/01-design/Org%20Chart.png)
+![Northwind Org Chart](screenshots/01-design/Org%20Chart.jpg)
 
 ---
 *Built as a portfolio project. All company data is fictional.*
