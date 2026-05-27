@@ -1,17 +1,14 @@
 # Northwind Solutions — Active Directory Lab
 
-A fully simulated enterprise Active Directory environment built in
-VirtualBox, documenting the complete lifecycle of identity management,
-group policy, file permissions, help desk operations, and security
-hardening for a fictional 30-person managed IT services company.
+A simulated enterprise Active Directory environment built in VirtualBox. The project documents the full lifecycle of identity management, group policy, file permissions, help desk operations, and security hardening for a fictional 30-person managed IT services company.
 
 ## What This Project Covers
 - Active Directory design, deployment and administration
 - PowerShell automation — bulk provisioning, auditing, offboarding
 - Group Policy Objects for department-level access control
 - File server setup with NTFS permission management
-- Help desk scenario documentation — real ticket resolutions
-- Security hardening and attack/detect demonstration
+- Help desk scenario documentation
+- Security hardening and attack/detect lab
 
 ## Environment
 | Component | Detail |
@@ -26,12 +23,12 @@ hardening for a fictional 30-person managed IT services company.
 ## Project Structure
 | Phase | Topic | Status |
 |---|---|---|
-| 1 | Company design — org chart, naming, OUs, IP plan | 🔄 In progress |
-| 2 | Foundation — DC, DNS, domain join | ⏳ Not started |
-| 3 | Company structure — OUs, groups, bulk users | ⏳ Not started |
-| 4 | Policies and access — GPOs, file shares | ⏳ Not started |
-| 5 | Help desk scenarios | ⏳ Not started |
-| 6 | Security hardening + attack/detect | ⏳ Not started |
+| 1 | Company design — org chart, naming, OUs, IP plan | In Progress |
+| 2 | Foundation — DC, DNS, domain join | Not Started |
+| 3 | Company structure — OUs, groups, bulk users | Not Started |
+| 4 | Policies and access — GPOs, file shares | Not Started |
+| 5 | Help desk scenarios | Not Started |
+| 6 | Security hardening + attack/detect | Not Started |
 
 ## Org Chart
 ![Northwind Org Chart](screenshots/01-design/Org%20Chart.jpg)
