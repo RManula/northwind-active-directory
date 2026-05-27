@@ -1,0 +1,31 @@
+FirstName,LastName,Department,JobTitle,Manager
+Margaret,Chen,Executive,Chief Executive Officer,
+David,Okafor,Executive,Chief Financial Officer,Margaret Chen
+Priya,Sharma,Executive,Chief Operations Officer,Margaret Chen
+James,Sullivan,IT,IT Manager,Priya Sharma
+Aisha,Rahman,IT,Systems Administrator,James Sullivan
+Tom,Nguyen,IT,Help Desk Technician,James Sullivan
+Lucas,Brandt,IT,Help Desk Technician,James Sullivan
+Sofia,Reyes,IT,Network Engineer,James Sullivan
+Robert,Kim,Finance,Finance Manager,David Okafor
+Emma,Watson,Finance,Senior Accountant,Robert Kim
+Hassan,Ali,Finance,Accountant,Robert Kim
+Grace,Liu,Finance,Payroll Officer,Robert Kim
+Daniel,Foster,Finance,Accounts Clerk,Robert Kim
+Karen,Mitchell,HR,HR Manager,Priya Sharma
+Olivia,Bennett,HR,HR Officer,Karen Mitchell
+Marcus,Webb,HR,Recruitment Specialist,Karen Mitchell
+Fatima,Noor,HR,HR Assistant,Karen Mitchell
+Andrew,Scott,Sales,Sales Manager,Priya Sharma
+Jessica,Taylor,Sales,Senior Sales Rep,Andrew Scott
+Ben,Carter,Sales,Sales Rep,Andrew Scott
+Mia,Hernandez,Sales,Sales Rep,Andrew Scott
+Ryan,Cooper,Sales,Sales Rep,Andrew Scott
+Chloe,Adams,Sales,Sales Rep,Andrew Scott
+Nathan,Price,Sales,Sales Coordinator,Andrew Scott
+Victor,Osei,Operations,Operations Manager,Priya Sharma
+Hannah,Schmidt,Operations,Project Coordinator,Victor Osei
+Ethan,Walker,Operations,Service Delivery Lead,Victor Osei
+Zara,Khan,Operations,Logistics Officer,Victor Osei
+Liam,Murphy,Operations,Operations Analyst,Victor Osei
+Isabella,Rossi,Operations,Facilities Coordinator,Victor Osei
