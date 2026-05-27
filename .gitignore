@@ -1,6 +1,8 @@
 *.vbox-prev
 *.vmdk
 *.vdi
+*.vbox
 Thumbs.db
 *.log
 Desktop.ini
+.DS_Store
