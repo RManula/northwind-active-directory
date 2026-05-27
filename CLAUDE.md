@@ -104,7 +104,7 @@ northwind-active-directory/
 - **Automation:** Heavy PowerShell. Scripts read employees.csv. Every script documented with WHY, not just WHAT.
 - **Security:** Full hardening + attack/detect in Phase 6. This is a cyber project, not just an IT admin lab.
 - **Documentation:** Every task framed as a real business scenario. Decisions documented with reasoning.
-- **OU design:** Tree mirrors the org chart. Each department has Users and Computers sub-OUs only. No Groups sub-OU — deliberate decision for a 30-person company, keeps navigation simple.
+- **OU design:** Tree mirrors the org chart. Each department has Users and Computers sub-OUs only. No Groups sub-OU — deliberate decision for a 30-person company.
 - **File server:** Separate VM from DC — deliberate security decision, DC should run minimal roles.
 - **Commits:** One clean commit per completed artifact. Meaningful messages only.
 
