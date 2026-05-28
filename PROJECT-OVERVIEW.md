@@ -55,8 +55,8 @@ Key files to read before doing anything:
 ✅  Attach NW-DC-01 to NAT Network
 ✅  Set static IP 10.0.2.10 on NW-DC-01
 ✅  Install AD DS role on NW-DC-01
-🔄  Promote NW-DC-01 to Domain Controller for northwind.local
-⏳  Configure AD-integrated DNS zone for northwind.local
+✅  Promote NW-DC-01 to Domain Controller for northwind.local
+🔄  Configure AD-integrated DNS zone for northwind.local
 ⏳  Verify AD and DNS are functioning correctly
 ⏳  Create NW-FS-01 VM — Windows Server 2016, 40 GB, 2 GB RAM
 ⏳  Install Windows Server 2016 Desktop Experience on NW-FS-01

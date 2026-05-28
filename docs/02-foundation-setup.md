@@ -123,13 +123,28 @@ Installed the Active Directory Domain Services role via Server Manager (Add Role
 
 ## Step 8 — Promote to Domain Controller
 
-**Status: In Progress**
+**Status: Complete**
+
+Promoted NW-DC-01 to Domain Controller for a new forest. Configuration:
+
+| Setting | Value |
+|---|---|
+| Deployment | New forest |
+| Root domain | northwind.local |
+| Forest functional level | Windows Server 2016 |
+| Domain functional level | Windows Server 2016 |
+| DNS Server | Installed during promotion |
+| NetBIOS name | NORTHWIND |
+
+Server rebooted automatically after promotion. Logged back in as NORTHWIND\Administrator.
+
+**Screenshots:** 15-dc-promotion-config.png, 16-dc-promotion-complete.png
 
 ---
 
 ## Step 9 — Configure DNS Zone for northwind.local
 
-**Status: Not Started**
+**Status: In Progress**
 
 ---
 
