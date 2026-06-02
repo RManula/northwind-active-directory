@@ -56,15 +56,15 @@ Key files to read before doing anything:
 ✅  Set static IP 10.0.2.10 on NW-DC-01
 ✅  Install AD DS role on NW-DC-01
 ✅  Promote NW-DC-01 to Domain Controller for northwind.local
-🔄  Configure AD-integrated DNS zone for northwind.local
-⏳  Verify AD and DNS are functioning correctly
-⏳  Create NW-FS-01 VM — Windows Server 2016, 40 GB, 2 GB RAM
-⏳  Install Windows Server 2016 Desktop Experience on NW-FS-01
-⏳  Rename to NW-FS-01
-⏳  Set static IP 10.0.2.20 on NW-FS-01
-⏳  Attach NW-FS-01 to NAT Network
-⏳  Install Guest Additions on NW-FS-01
-⏳  Domain join NW-FS-01 to northwind.local
+✅  Configure AD-integrated DNS zone for northwind.local
+✅  Verify AD and DNS are functioning correctly
+✅  Create NW-FS-01 VM — Windows Server 2016, 40 GB, 2 GB RAM
+✅  Install Windows Server 2016 Desktop Experience on NW-FS-01
+✅  Rename to NW-FS-01
+✅  Set static IP 10.0.2.20 on NW-FS-01
+✅  Attach NW-FS-01 to NAT Network
+✅  Install Guest Additions on NW-FS-01
+✅  Domain join NW-FS-01 to northwind.local
 ⏳  Create NW-WS-01 VM — Windows 10, 40 GB, 2 GB RAM
 ⏳  Install Windows 10 on NW-WS-01
 ⏳  Rename to NW-WS-01
