@@ -65,16 +65,16 @@ Key files to read before doing anything:
 ✅  Attach NW-FS-01 to NAT Network
 ✅  Install Guest Additions on NW-FS-01
 ✅  Domain join NW-FS-01 to northwind.local
-⏳  Create NW-WS-01 VM — Windows 10, 40 GB, 2 GB RAM
-⏳  Install Windows 10 on NW-WS-01
-⏳  Rename to NW-WS-01
-⏳  Set DNS to point to 10.0.2.10 on NW-WS-01
-⏳  Attach NW-WS-01 to NAT Network
-⏳  Install Guest Additions on NW-WS-01
-⏳  Domain join NW-WS-01 to northwind.local
-⏳  Verify domain login works from NW-WS-01
-⏳  Write docs/02-foundation-setup.md
-⏳  Push Phase 2 to GitHub
+✅  Create NW-WS-01 VM — Windows 10, 40 GB, 2 GB RAM
+✅  Install Windows 10 on NW-WS-01
+✅  Rename to NW-WS-01
+✅  Set DNS to point to 10.0.2.10 on NW-WS-01
+✅  Attach NW-WS-01 to NAT Network
+⏳  Install Guest Additions on NW-WS-01  (optional — clipboard/resolution only, not required for domain)
+✅  Domain join NW-WS-01 to northwind.local
+✅  Verify domain login works from NW-WS-01
+✅  Write docs/02-foundation-setup.md
+🔄  Push Phase 2 to GitHub
 
 
 ================================================================

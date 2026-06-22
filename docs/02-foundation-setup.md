@@ -184,27 +184,47 @@ Came back up as NORTHWIND\Administrator. Server Manager shows Domain: northwind.
 
 ## Step 14 - Create NW-WS-01 VM
 
-In progress. Windows 10 Pro install.
+Windows 10 Pro, 40 GB disk, 2 GB RAM. Clean install with local account `localadmin` created during OOBE.
 
 ![NW-WS-01 created](../screenshots/02-foundation/28-nwws01-vm-created.png)
+![Windows 10 installed](../screenshots/02-foundation/29-nwws01-windows10-installed.png)
 
 ---
 
 ## Step 15 - Configure NW-WS-01
 
-Not started.
+Powered off, switched adapter from NAT to Northwind-NAT. Booted, renamed to NW-WS-01 via Settings > System > About. Set DNS to 10.0.2.10 (NW-DC-01) — IP left on DHCP as workstations do not need a fixed address, but DNS must point to the DC so the domain can be located during join.
+
+No screenshots captured for adapter change and rename.
+
+![DNS configured](../screenshots/02-foundation/32-nwws01-dns-configured.png)
 
 ---
 
 ## Step 16 - Domain Join NW-WS-01
 
-Not started.
+Joined from an elevated PowerShell prompt on NW-WS-01:
+
+```powershell
+Add-Computer -DomainName northwind.local -Credential NORTHWIND\Administrator -Restart
+```
+
+Confirmed joined after reboot — `PartOfDomain` returns `True` and the domain reads `northwind.local`:
+
+```powershell
+(Get-WmiObject Win32_ComputerSystem) | Select-Object Name, Domain, PartOfDomain
+# Domain : northwind.local   PartOfDomain : True
+```
+
+> **Lesson learned:** Domain join — and any later domain login — will fail if NW-DC-01 is not running. The workstation relies on the DC for DNS resolution of `northwind.local` and for Kerberos authentication. A login attempt as `NORTHWIND\Administrator` while the DC is off (or before the machine is actually joined) is rejected because the workstation has no way to reach the domain. Always boot the DC first. In production the DC is always on — in a lab you have to start it manually.
+
+![Domain join confirmed](../screenshots/02-foundation/30-nwws01-domain-joined-confirmed.png)
 
 ---
 
 ## Step 17 - Verify Domain Login from NW-WS-01
 
-Not started.
+Logged in at the workstation as `NORTHWIND\Administrator` (the only domain account that exists at this stage — the 30 employee accounts are created in Phase 3). A successful domain login is itself proof the machine is correctly joined and can authenticate against the DC over Kerberos.
 
 ---
 
@@ -225,7 +245,7 @@ Not started.
 | 11 | Create NW-FS-01 VM | Done |
 | 12 | Configure NW-FS-01 | Done |
 | 13 | Domain join NW-FS-01 | Done |
-| 14 | Create NW-WS-01 VM | In Progress |
-| 15 | Configure NW-WS-01 | Not Started |
-| 16 | Domain join NW-WS-01 | Not Started |
-| 17 | Verify domain login | Not Started |
+| 14 | Create NW-WS-01 VM | Done |
+| 15 | Configure NW-WS-01 | Done |
+| 16 | Domain join NW-WS-01 | Done |
+| 17 | Verify domain login | Done |
